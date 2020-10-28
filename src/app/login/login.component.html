@@ -1,0 +1,33 @@
+<div style="width: 100%; display: flex; justify-content: center">
+  <div [ngClass]="appService.currentTheme === 'white'? 'login-form': 'login-form-contrast'"
+       style="display: flex; justify-content: center; border: 1px solid black; border-radius: 10px">
+    <div class="col-md-12" style="border-bottom: 4px solid darkslategray">
+      <h1 style="justify-content: center; text-align: center; margin-top: 10px; color: black; font-size: 35px">Login</h1>
+    </div>
+
+
+    <div class="col-md-12">
+      <mat-form-field appearance="outline"  style="width: 100%; margin-top: 30px; font-size: 18px; font-weight: 500">
+        <mat-label>Login/E-mail</mat-label>
+        <input matInput type="text" style="text-align: center; color: black"
+               matTooltip="exemplo@email.com" required
+               [(ngModel)]="usuarioLogin">
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-12">
+      <mat-form-field appearance="outline" style="width: 100%; margin-top: 30px; font-size: 16px; font-weight: 500">
+        <mat-label>Senha</mat-label>
+        <input matInput type="password"  style="text-align: center; color: black"
+               required [(ngModel)]="usuarioSenha">
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-12" style="justify-content: center; display: flex">
+      <button [disabled]="!checkLoginSenha()" class="btn btn-success" style="margin: 5px; width: 45%">Logar</button>
+      <button (click)="voltarClick()" class="btn btn-danger" style="margin: 5px; width: 45%">Voltar</button>
+    </div>
+
+  </div>
+</div>
+

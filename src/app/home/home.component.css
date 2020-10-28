@@ -1,0 +1,29 @@
+.item-instock{
+  color: green;
+  font-weight: bold;
+}
+.item-outstock{
+  color: red;
+  font-weight: bold;
+}
+
+.home-header{
+  margin-top: -30px;
+  margin-left: 40%;
+  z-index: -1;
+  position: absolute
+}
+.product-item{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  background-color: whitesmoke;
+  color: black;
+}
+product-item-content{
+  width: 340px;
+}

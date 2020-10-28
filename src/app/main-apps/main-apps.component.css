@@ -1,0 +1,63 @@
+li{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  height: 40px;
+
+}
+li:hover{
+  color: wheat;
+  text-decoration: underline;
+}
+li:active{
+  color: wheat;
+  font-size: 22px;
+}
+.apps-button-contrast{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 5px;
+  padding-top: 7px;
+  padding-left: 2px;
+  background-color: skyblue;
+}
+.apps-button-contrast:hover{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 5px;
+  padding-top: 7px;
+  padding-left: 2px;
+  background-color: wheat;
+}
+.apps-button{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 5px;
+  padding-top: 7px;
+  padding-left: 2px;
+}
+.apps-button:hover{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-left: 5px;
+  padding-top: 7px;
+  padding-left: 2px;
+  background-color: skyblue;
+}
+.menu-item-black{
+  color: black;
+}
+.menu-item-white{
+  color: white;
+}
+.item-menu-list:active{
+  background-color: aqua;
+}

@@ -1,0 +1,29 @@
+
+  <mat-toolbar class="col-md-12" [ngStyle]="appService.bgStyleColorHeader"
+               style="height: auto; margin-bottom: 5px;">
+
+    <div class="col-md-6" style="width: 100%; padding-left: 0px">
+      <img src="./assets/images/artnew_logo.png" alt="logo">
+    </div>
+
+    <div class="col-md-6" style="justify-content: flex-end; display: flex; padding-right: 0px">
+      <button *ngIf="appService.isLoginButtonVisible"
+              (click)="goTo('/login')"
+              [ngClass]="appService.currentTheme === 'white'? 'btn btn-outline-dark':'btn btn-dark'"
+              style="margin: 5px"> Login
+      </button>
+      <button *ngIf="appService.isCadastroButtonVisible"
+              (click)="goTo('/cadastro')"
+              [ngClass]="appService.currentTheme === 'white'? 'btn btn-outline-dark':'btn btn-dark'"
+              style="margin: 5px"> Cadastrar
+      </button>
+      <button [ngClass]="appService.currentTheme === 'white'? 'btn btn-outline-dark':'btn btn-dark'"
+              style="height: 38px; margin-top: 5px; margin-left: 10px;"
+              (click)="changeTheme()">
+        <mat-icon>brightness_medium</mat-icon>
+      </button>
+    </div>
+
+  </mat-toolbar>
+
+

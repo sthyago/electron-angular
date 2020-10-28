@@ -1,0 +1,12 @@
+.login-form{
+  background-color: lightblue;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 35%;
+}
+.login-form-contrast{
+  background-color: lightgray;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 35%;
+}

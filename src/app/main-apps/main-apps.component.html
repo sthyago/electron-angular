@@ -1,0 +1,33 @@
+<div style="margin-top: 5px">
+  <mat-drawer-container class="drawer-container" [ngStyle]="appService.bgStyleColor">
+    <mat-drawer #drawer [ngStyle]="appService.bgStyleColor" mode="side">
+      <div style="width: 210px">
+        <ul style="list-style-type: none; width: 200px" id="menuPrincipal">
+
+          <li *ngFor="let menuItem of menuItems" id="{{menuItem.route}}"
+              style="padding-top: 10px; width: 210px; margin-left: -40px"
+              (click)="menuItemClick(menuItem.route)">
+            <a [ngClass]="appService.currentTheme === 'white'? 'menu-item-black':'menu-item-white'"
+               [routerLink]="menuItem.route" style="margin-left: 10px; height: 50px">
+
+              <fa-icon [icon]="menuItem.icon" style="margin-right: 5px"></fa-icon> {{menuItem.value}}
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </mat-drawer>
+
+    <div style="width: auto; height: 600px">
+        <div [ngClass]="appService.currentTheme === 'white'? 'apps-button': 'apps-button-contrast'">
+          <img src="assets/images/app_24x24.png"
+               (click)="drawer.toggle()"
+               style="z-index: 3; margin-left: 5px">
+        </div>
+
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-container>
+</div>

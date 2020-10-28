@@ -1,0 +1,21 @@
+.cadastro-form{
+  background-color: lightblue;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.cadastro-form-contrast{
+  background-color: lightgray;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+input:valid{
+  font-size: 16px;
+  font-weight: 700;
+  color: green;
+}
+input:invalid{
+  font-size: 16px;
+  font-weight: 700;
+  color: red;
+}
